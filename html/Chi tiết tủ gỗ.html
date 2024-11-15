@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sản phẩm</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/Chi tiết sản phẩm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="../img/logo.png" alt="Logo" id="logo">
+                </a>
+                <!-- Nút collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../html/Trang chủ.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/Giới thiệu.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../html/Bàn gỗ.html">
+                                        Bàn gỗ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../html/Sofa.html">
+                                        Sofa
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../html/Tủ gỗ.html">
+                                        Tủ gỗ
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/cart.html">Giỏ hàng</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                Hỗ trợ
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="../html/Site map.html">
+                                        Site map
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../html/Thành viên.html">
+                                        Thành viên
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="../html/Thông tin khách hàng.html">
+                                        Thông tin khách hàng
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/Đăng nhập.html">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/Đăng ký.html">Đăng kí</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Ô tìm kiếm-->
+                <div class="d-flex order-lg-2">
+                    <div class="input-group">
+                        <input type="text" name="search" id="search" class="form-control btn-search-custom"
+                            placeholder="Tìm kiếm...">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="title-1">
+            <h2>Chi tiết sản phẩm</h2>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="img-sanpham">
+                    <img src="../img/tugo5.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="title-1">
+                    <p>Tên sản phẩm: <span id="tensp">TỦ GỖ CAO CẤP</span></p>
+                    <hr>
+                </div>
+                <div class="title-1">
+                    <p>Xuất xứ: Việt Nam</p>
+                    <hr>
+                </div>
+                <div class="title-1">
+                    <p>Chất liệu: Gỗ Sồi (Oak)</p>
+                    <hr>
+                </div>
+                <div class="title-1">
+                    <p>Mô tả: Được làm từ gỗ tự nhiên bền đẹp, tủ gỗ mang đến vẻ sang trọng và độ bền lâu dài.
+                        Thiết kế tinh tế, chống trầy xước và bảo vệ tốt trước mối mọt, là lựa chọn hoàn hảo
+                        cho không gian sống của bạn.</p>
+                    <hr>
+                </div>
+                <div class="title-1">
+                    <p>Đơn giá: <span style="color: #D8B75C; font-weight: bolder;">9.000.000đ</span></p>
+                    <hr>
+                </div>
+                <div class="title-1">
+                    <input type="number" min="0" value="1" max="15" id="soluong">
+                    <button type="button" id="btnadd">
+                        Thêm vào giỏ hàng <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="row text-center row-cols-2 row-cols-md-4">
+            <div class="title col-md-4">
+                <div class="d-flex flex-column">
+                    <p><i class="fa-solid fa-phone me-3"></i>Hotline</p>
+                    <a class="nav-link" href="#">0123 456 789</a>
+                    <a class="nav-link" href="#">0123 456 789</a>
+                </div>
+            </div>
+            <div class="title col-md-4">
+                <div class="d-flex flex-column align-items-center">
+                    <p><i class="fa-solid fa-location-dot me-3"></i>Địa chỉ</p>
+                    <p class="text-justify">
+                        Số 12, Nguyễn Văn Bảo, <br> Phường 4, Quận Gò Vấp, <br> TP. Hồ Chí Minh
+                    </p>
+                </div>
+            </div>
+            <div class="title col-md-4">
+                <p><i class="fa-solid fa-globe me-3"></i>Liên hệ</p>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-brands fa-facebook" id="icon-mxh"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-brands fa-instagram" id="icon-mxh"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-brands fa-youtube" id="icon-mxh"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><i class="fa-brands fa-tiktok" id="icon-mxh"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            // Xử lý sự kiện khi nhấn nút thêm vào giỏ hàng
+            $('#btnadd').on('click', function () {
+                var tenSanPham = $('#tensp').text();
+                var donGia = 9000000;
+                var soLuong = parseInt($('#soluong').val());
+                var thanhTien = donGia * soLuong;
+                var imageSrc = "../img/tugo5.png";
+
+                // Kiểm tra nếu giỏ hàng đã có trong localStorage
+                var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                // Thêm sản phẩm vào giỏ hàng
+                var product = {
+                    tenSanPham: tenSanPham,
+                    soLuong: soLuong,
+                    donGia: donGia,
+                    thanhTien: thanhTien,
+                    image: imageSrc
+                };
+                cart.push(product);
+
+                // Lưu giỏ hàng vào localStorage
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                alert('Đã thêm sản phẩm vào giỏ hàng!');
+            });
+        });
+    </script>
+</body>
+
+</html>

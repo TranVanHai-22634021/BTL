@@ -1,0 +1,88 @@
+body{
+    background-color: #121212;
+    color: #D8B75C;
+}
+/* header */
+header {
+    height: 200px;
+    position: relative;
+    width: 100%; 
+}
+
+.container-fluid {
+    width: 100%; 
+}
+
+.navbar {
+    position: fixed;
+    background-color: black;
+    z-index: 9999;
+    width: 100%;
+}
+
+.navbar-brand {
+    width: auto; 
+}
+
+#logo {
+    width: auto;  
+    max-width: 30%;
+    height: auto;
+}
+
+#navbarNav {
+    width: 70%; 
+}
+.btn-search-custom{
+    border-radius: 30px;
+}
+/* end header */
+/* container */
+.container{
+    margin-top: 0px;
+    width: 1200px;
+    height: auto;
+}
+.title-1 h2,
+.title-1 p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.title-1 h2{
+    font-size: 50px;
+}
+.title-1 p{
+    font-size: 20px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+/* end container */
+
+/* footer */
+footer{
+    margin-top: 50px;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    background-color: black;
+}
+footer .row {
+    width: 100%;    
+}
+footer .title{
+    margin-top: 50px;
+}
+footer .title p,
+footer .title a{
+    color: #D8B75C;
+}
+footer #icon-mxh{
+    font-size: 25px;
+    color: #D8B75C;
+}
+footer .nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+}

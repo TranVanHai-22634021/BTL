@@ -1,0 +1,106 @@
+body{
+    background-color: #121212;
+    color: #D8B75C;
+}
+/* header */
+header {
+    height: 200px;
+    position: relative;
+    width: 100%; 
+}
+
+.container-fluid {
+    width: 100%; 
+}
+
+.navbar {
+    position: fixed;
+    background-color: black;
+    z-index: 9999;
+    width: 100%;
+}
+
+.navbar-brand {
+    width: auto; 
+}
+
+#logo {
+    width: auto;  
+    max-width: 30%;
+    height: auto;
+}
+
+#navbarNav {
+    width: 70%; 
+}
+.btn-search-custom{
+    border-radius: 30px;
+}
+/* end header */
+/* container */
+.container{
+    margin-top: 10px;
+    width: 1200px;
+    height: auto;
+}
+.title-1 h2{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+.title-1 p{
+    font-size: 17px;
+    color: white;
+}
+.title-1 #soluong{
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: #333;
+    border: none;
+    color: #D8B75C;
+}
+.title-1 #btnadd{
+    margin-left: 10px;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #333;
+    border: none;
+    color: #D8B75C;
+}
+#btnadd:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out; 
+} 
+.img-sanpham img{
+    width: 100%;
+}
+/* end container */
+/* footer */
+footer{
+    margin-top: 50px;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    background-color: black;
+}
+footer .row {
+    width: 100%;    
+}
+footer .title{
+    margin-top: 50px;
+}
+footer .title p,
+footer .title a{
+    color: #D8B75C;
+}
+footer #icon-mxh{
+    font-size: 25px;
+    color: #D8B75C;
+}
+footer .nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+}
